@@ -1,0 +1,346 @@
+﻿<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🦷مخابر عالم الزيركون للتعويضات السنية🦷 </title>
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://googleapis.com/css2?family=Cairo:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Cairo', sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #1a1c23;
+            line-height: 1.6;
+            direction: rtl;
+            text-align: right;
+        }
+
+        header {
+            background-color: #ffffff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            border-bottom: 3px solid #c5a880;
+            padding: 15px 20px;
+        }
+
+        .logo-text {
+            font-weight: 700;
+            font-size: 24px;
+            color: #0d3b66;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .hero-section {
+            background: linear-gradient(135deg, #0d3b66, #1a1c23);
+            color: #ffffff;
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 4px solid #c5a880;
+        }
+
+            .hero-section h1 {
+                font-size: 34px;
+                margin-bottom: 12px;
+            }
+
+            .hero-section p {
+                font-size: 16px;
+                max-width: 800px;
+                margin: 0 auto 20px auto;
+                opacity: 0.9;
+            }
+
+        .tech-box {
+            display: inline-block;
+            background: rgba(197, 168, 128, 0.2);
+            border: 1px solid #c5a880;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 13px;
+            color: #c5a880;
+            font-weight: 600;
+        }
+
+        .page-container {
+            max-width: 1200px;
+            width: 95%;
+            margin: 40px auto;
+        }
+
+        .section-main-title {
+            font-size: 22px;
+            color: #0d3b66;
+            margin: 30px 0 20px 0;
+            border-right: 4px solid #c5a880;
+            padding-right: 12px;
+            font-weight: 700;
+        }
+
+        .services-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .service-card-item {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-top: 3px solid #0d3b66;
+        }
+
+            .service-card-item h3 {
+                color: #0d3b66;
+                font-size: 18px;
+                margin-bottom: 10px;
+            }
+
+            .service-card-item p {
+                font-size: 14px;
+                color: #555;
+            }
+
+        .gallery-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+            margin-bottom: 50px;
+        }
+
+        .gallery-card-item {
+            background: #ffffff;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            border-bottom: 3px solid #c5a880;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+            .gallery-card-item img {
+                width: 100%;
+                height: 230px;
+                object-fit: cover;
+                display: block;
+            }
+
+            .gallery-card-item .img-title {
+                padding: 12px;
+                text-align: center;
+                font-weight: 700;
+                color: #0d3b66;
+                font-size: 13px;
+                background-color: #ffffff;
+                min-height: 65px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-top: 1px solid #f0f0f0;
+            }
+
+        .branches-layout {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 25px;
+        }
+
+        .branch-info-card {
+            background: #ffffff;
+            border-radius: 8px;
+            padding: 25px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            border-right: 5px solid #0d3b66;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .item-row {
+            font-size: 14px;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+            .item-row strong {
+                color: #1a1c23;
+            }
+
+        .action-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            margin-top: 20px;
+            position: relative;
+        }
+
+        .btn-action {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
+            color: #ffffff;
+            border: none;
+            padding: 12px;
+            border-radius: 6px;
+            font-weight: 700;
+            font-size: 14px;
+            cursor: pointer;
+            transition: opacity 0.2s ease;
+            width: 100%;
+            text-align: center;
+        }
+
+            .btn-action:active {
+                opacity: 0.8;
+            }
+
+        .btn-blue {
+            background-color: #0d3b66;
+            box-shadow: 0 4px 10px rgba(13, 59, 102, 0.15);
+        }
+
+        .btn-green {
+            background-color: #25D366;
+            box-shadow: 0 4px 10px rgba(37, 211, 102, 0.2);
+        }
+
+        .toast-msg {
+            position: fixed;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: #1a1c23;
+            color: #25D366;
+            padding: 10px 20px;
+            border-radius: 20px;
+            font-weight: 700;
+            font-size: 14px;
+            display: none;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+            z-index: 9999;
+            border: 1px solid #25D366;
+        }
+
+        footer {
+            background-color: #1a1c23;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px;
+            font-size: 13px;
+            margin-top: 50px;
+            border-top: 2px solid #c5a880;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div class="logo-text">مخابر عالم الزيركون</div>
+        </div>
+    </header>
+
+    <section class="hero-section">
+        <h1>مخابر عالم الزيركون للتعويضات السنية</h1>
+        <p>تحت إشراف الفني عبدالله محمد محمد عبدالله بخبرة تتجاوز 25 عاماً. نجمع بين الفن والتكنولوجيا الرقمية لنصنع أبهى الابتسامات لأطباء الأسنان ومرضاهم.</p>
+        <div class="tech-box">العمل والتصميم تحت أحدث أنظمة كاد كام (CAD/CAM) الرقمية العالمية وطابعات الأسنان ثلاثية الأبعاد</div>
+    </section>
+
+    <div class="page-container">
+        <div class="section-main-title">تخصصاتنا الرقمية والاحترافية</div>
+        <div class="services-layout">
+            <div class="service-card-item">
+                <h3>تعويضات الزيركون الرقمية</h3>
+                <p>تيجان وجسور زيركون فائقة الدقة والشفافية الحيوية، بصلابة ممتازة ومحاكاة تشريحية كاملة للأسنان الطبيعية.</p>
+            </div>
+            <div class="service-card-item">
+                <h3>تيجان وجسور الخزف السني</h3>
+                <p>صياغة وبناء تعويضات الخزف التقليدي والحديث بدقة متناهية تتوافق تماماً مع خط الابتسامة الطبيعي.</p>
+            </div>
+            <div class="service-card-item">
+                <h3>الأطقم المتحركة والمرنة</h3>
+                <p>تصميم وصناعة الأطقم الكاملة والجزئية بدقة فائقة تضمن للمريض الراحة الكاملة والكفاءة النطقية والمضغية.</p>
+            </div>
+        </div>
+
+        <div class="section-main-title">معرض أعمالنا الحية (من داخل مخابرنا)</div>
+        <div class="gallery-layout">
+            <div class="gallery-card-item"><img src="4.png" alt="الحالة الأولى"><div class="img-title">الحالة الأولى: تراجع وتتهيج شديد وتراكمات قبل البدء بالترميم السني</div></div>
+            <div class="gallery-card-item"><img src="2.png" alt="الحالة الثانية"><div class="img-title">الحالة الثانية: هندسة دقيقة لبرد وتجهيز الأسنان لاستقبال التعويضات</div></div>
+            <div class="gallery-card-item"><img src="5.png" alt="الحالة الثالثة"><div class="img-title">الحالة الثالثة: محاكاة وتخطيط رقمي متكامل ثري دي (CAD/CAM) وجسور زيركون مصقولة</div></div>
+            <div class="gallery-card-item"><img src="3.png" alt="الحالة الرابعة"><div class="img-title">النتيجة النهائية: ابتسامة مصفوفة ومحاكاة تامة لخط الابتسامة الطبيعي</div></div>
+            <div class="gallery-card-item"><img src="1.png" alt="الحالة الخامسة"><div class="img-title">تفاصيل الإتقان: تيجان زيركون عالية النقاء وتوافق حيوي مذهل</div></div>
+            <div class="gallery-card-item"><img src="7.png.jpeg" alt="الحالة السادسة"><div class="img-title">تفاصيل الإتقان:النتيجة 🔥🔥🔥</div></div>
+            <div class="gallery-card-item"><img src="9.png.jpeg" alt="الحالة السابعة"><div class="img-title"> تفاصيل الإتقان:النتيجة 🔥🔥🔥</div></div>
+           
+            <div class="gallery-card-item"><img src="6.png.jpeg" alt="الحالة التاسعة"><div class="img-title">تفاصيل الإتقان:النتيجة 🔥🔥🔥 </div></div>
+       
+        </div>
+
+        <div class="section-main-title">فروعنا وقنوات التواصل المباشر</div>
+        <div class="branches-layout">
+
+            <!-- فرع ترمانين -->
+            <div class="branch-info-card">
+                <div>
+                    <h3>فرع ترمانين (المركز الرئيسي)</h3>
+                    <div class="item-row" style="margin-top: 15px;"><strong>بإدارة:</strong> الفني عبدالله محمد عبدالله</div>
+                    <div class="item-row"><strong>العنوان:</strong> إدلب - ترمانين | جانب مطعم الأوائل - مقابل المستوصف.</div>
+                    <div class="item-row"><strong>رقم الهاتف:</strong> +963 954 605 318</div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-action btn-blue" onclick="copyText('إدلب ترمانين مقابل المستوصف', 'تم نسخ عنوان موقع ترمانين! يمكنك الآن لصقه في الخرائط')">📍 نسخ عنوان ترمانين للخرائط</button>
+                    <button class="btn-action btn-green" onclick="copyText('+963954605318', 'تم نسخ رقم المسؤول عبدالله! يمكنك الآن لصقه في واتساب')">💬 نسخ رقم واتساب ترمانين</button>
+                </div>
+            </div>
+
+            <!-- فرع حلب -->
+            <div class="branch-info-card">
+                <div>
+                    <h3>فرع حلب</h3>
+                    <div class="item-row" style="margin-top: 15px;"><strong>المسؤول:</strong> محمد عبدالله</div>
+                    <div class="item-row"><strong>العنوان:</strong> حلب - بستان القصر | جانب مجوهرات شحرور.</div>
+                    <div class="item-row"><strong>رقم الهاتف:</strong> +963 981 782 829</div>
+                </div>
+                <div class="action-buttons">
+                    <button class="btn-action btn-blue" onclick="copyText('حلب بستان القصر مجوهرات شحرور', 'تم نسخ عنوان  موقع حلب! يمكنك الآن لصقه في الخرائط')">📍 نسخ عنوان حلب للخرائط</button>
+                    <button class="btn-action btn-green" onclick="copyText('+963981782829', 'تم نسخ رقم المسؤول محمد! يمكنك الآن لصقه في واتساب')">💬 نسخ رقم واتساب حلب</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div id="toast" class="toast-msg"></div>
+
+    <footer>
+        <p>جميع الحقوق محفوظة © مخابر عالم الزيركون 2026</p>
+    </footer>
+
+    <script>
+        function copyText(text, message) {
+            navigator.clipboard.writeText(text).then(function () {
+                var toast = document.getElementById("toast");
+                toast.innerText = message;
+                toast.style.display = "block";
+                setTimeout(function () {
+                    toast.style.display = "none";
+                }, 3500);
+            }).catch(function (err) {
+                alert("يرجى نسخ النص يدوياً: " + text);
+            });
+        }
+    </script>
+</body>
+</html>
